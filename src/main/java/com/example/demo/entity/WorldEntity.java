@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class worldEntity {
+public class WorldEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
