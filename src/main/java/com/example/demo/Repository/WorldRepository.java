@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface WorldRepository extends JpaRepository<WorldEntity, Long> {
 
-    public List<WorldEntity> findById (Long id);
+
 }
