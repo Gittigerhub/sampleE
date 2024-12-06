@@ -1,8 +1,6 @@
 package com.example.demo.controller;
 
-
 import com.example.demo.Repository.SGHRepository;
-import com.example.demo.Service.SGHService;
 import com.example.demo.entity.SGHEntity;
 import jakarta.persistence.Lob;
 import lombok.Getter;
@@ -24,11 +22,12 @@ public class SGHController {
     @GetMapping("/list")
     public String list(SGHEntity entity){
 
+
         sghRepository.save(entity);
 
 
 
-        return "/SGH/list";
+        return "team/SGH/list";
     }
 
 
