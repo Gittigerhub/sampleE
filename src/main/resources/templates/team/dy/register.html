@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>글 등록</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <h1>글 등록하기</h1>
+        </div>
+    </div>
+
+    <form action="/dy/register" method="post" enctype="multipart/form-data">
+        <div class="row">
+            <label for="title" class="col">제목</label>
+            <input type="text" name="title" class="form-control" id="title" placeholder="제목을 입력하세요">
+        </div>
+
+
+        <div class="row">
+            <label for="content" class="col">글 내용</label>
+            <textarea name="content" class="form-control" id="content" rows="3" placeholder="내용을 입력하세요"></textarea>
+        </div>
+
+        <div class="row">
+            <label for="writer" class="col">작성자</label>
+            <input type="text" name="writer" class="form-control" id="writer" placeholder="작성자를 입력하세요">
+        </div>
+
+        <div class="col-12">
+            <button class="btn btn-dark">저장</button>
+            <button type="button" class="btn btn-dark listbtn">목록</button>
+            <script>
+                $(".listbtn").on("click", function () {
+                    location.href = "/team/dy/list";
+                })
+            </script>
+        </div>
+
+    </form>
+
+
+</body>
+</html>
