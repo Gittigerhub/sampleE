@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 @Log4j2
-public class worldController {
+public class WorldController {
 
     @GetMapping("/team/world/list")
     public String list(){
