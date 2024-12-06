@@ -14,7 +14,7 @@ public class worldController {
         log.info("깃 확인용" +
                 "controller" +
                 "입니다" +
-                "!!!!!");
+                "!!!");
 
         return "team/world/list";
     }
